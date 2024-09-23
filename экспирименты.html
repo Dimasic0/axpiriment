@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<article>
+  <h2>Полезное</h2>
+  <p>Нумеровать сноски при разметке <a href="#html" class="footnote-label" id="html-ref">HTML</a> страницы  нет необходимости.</p>
+  <p>Добавить нумерацию можно с помощью упорядоченного списка и <a href="#css" class="footnote-label" id="css-ref">CSS</a> <a href="#css-counters" class="footnote-label" id="css-counters-ref">счётчика</a>.</p>
+</article>
+<footer style="margin-top: 1000px;">
+  <h3 class="visually-hidden" id="footnote-label">Сноски</h3>
+  <ol>
+    <li id="html">HTML (от англ. HyperText Markup Language — «язык гипертекстовой разметки») — ... <a href="#html-ref" class="back">↩</a></li>
+    <li id="css">CSS (англ. Cascading Style Sheets — каскадные таблицы стилей) — ... <a href="#css-ref" class="back">↩</a></li>
+      ...
+  </ol>
+	<button type="button" name="button">привет</button>
+	<script type="text/javascript">
+    function al () {
+    setTimeout(() => {
+			this.name="Dima";
+			console.dir(this);
+						console.log('name');
+			console.log(this.name);
+		},1000);
+  }
+  al();
+	  document.querySelector('button').addEventListener('click',al);
+	</script>
+</footer>
+</body>
+</html>
